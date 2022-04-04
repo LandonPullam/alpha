@@ -242,17 +242,80 @@
        
         </div>
 
-        <input id='first' type="text" class="form-control formBlock" name="bus_ticket"  placeholder="Bus Ticket..." required/><br />
 
-<input id='second' type="text" class="form-control formBlock" name="plane_ticket"  placeholder="Plane Ticket..." required/><br />
 
-<input id='third' type="text" class="form-control formBlock" name="hotel_expenses"  placeholder="Hotel Expenses..." required/><br />
 
- <input id='fourth' type="text" class="form-control formBlock" name="eating_expenses"  placeholder="Eating Expenses..." required/><br />
 
-Total : <span id="total_expenses"></span>
-
-<input id='total_expenses' type="text" class="form-control formBlock" name="funding"  placeholder="Total Expenses..."/>
+<table cellpadding="4" cellspacing="4" border="1">
+  <tr>
+      <td valign="top">
+          <table cellpadding="4" cellspacing="4" border="0">
+              <thead>
+                  <tr>
+                      <td colspan="2">
+                          Products for sale
+                      </td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          Table
+                      </td>
+                      <td>
+                          <input type="button" value="Add to cart" onclick="AddtoCart('Table','Big red table',50)"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Door
+                      </td>
+                      <td>
+                          <input type="button" value="Add to cart" onclick="AddtoCart('Door','Yellow Door',150)"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Car
+                      </td>
+                      <td>
+                          <input type="button" value="Add to cart" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+                      </td>
+                  </tr>
+              </tbody>
+  
+          </table>
+      </td>
+      <td valign="top">
+          <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+              <thead>
+                  <tr>
+                      <td>
+                          Name
+                      </td>
+                      <td>
+                          Description
+                      </td>
+                      <td>
+                          Price
+                      </td>
+                  </tr>
+              </thead>
+              <tbody id="orderedProductsTblBody">
+  
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td colspan="3" align="right" id="cart_total">
+  
+                      </td>
+                  </tr>
+              </tfoot>
+          </table>
+      </td>
+  </tr>
+  </table>
+  
 
 
 
