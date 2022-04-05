@@ -41,7 +41,7 @@
           </div>
 
           <div class="form-check form-switch">
-            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch" style="display: none">
             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
           </div>
           <script src="dark-mode-switch.min.js"></script>
@@ -144,9 +144,7 @@
                 <h5 class="card-title cardT text-center">Kibbles'n Bits</h5>
                 <img src="pICTUREs/kibblesnbits.png" alt="FOOD" class="card-img" >
              <p class="card-text cardT text-center">Costs: $4.88</p>
-             <td>
-              <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
-          </td>
+             <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Kibblesnbits',4.88)"/>
               </div>
             </div>
           </div>
@@ -156,9 +154,7 @@
                 <h5 class="card-title cardT text-center">I'mas</h5>
                 <img src="pICTUREs/iams.png" alt="FOOD" class="card-img">
                 <p class="card-text cardT text-center">Costs: $11.48</p>
-                <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
-              </td>
+                <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Iams',11.48)"/>
               </div>
             </div>
           </div>
@@ -168,9 +164,7 @@
                 <h5 class="card-title cardT text-center">Pedigree</h5>
                 <img src="pICTUREs/pedigree.png" alt="FOOD" class="card-img">
                 <p class="card-text cardT text-center">Costs: $13.98</p>
-                <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
-              </td>
+                <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
               </div>
             </div>
           </div>
@@ -180,9 +174,7 @@
                 <h5 class="card-title cardT text-center">Purina One Smart Blend</h5>
                 <img src="pICTUREs/purinaonesmartblend.png" alt="FOOD" class="card-img">
                 <p class="card-text cardT text-center">Costs: $13.98</p>
-                <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
-              </td>
+                <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Purina',13.98)"/>
               </div>
             </div>
           </div>
@@ -192,9 +184,7 @@
                 <h5 class="card-title cardT text-center">Blue Buffalo</h5>
                 <img src="pICTUREs/blue-buffalo.png" alt="FOOD" class="card-img"/>
                 <p class="card-text cardT text-center">Costs: $15.98</p>
-                <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
-              </td>
+                <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Blue BUFFALO',15.98)"/>
               </div>
             </div>
           </div>
@@ -276,45 +266,7 @@
 
 
 <table cellpadding="4" cellspacing="4" border="1">
-  <tr>
-      <td valign="top">
-          <table cellpadding="4" cellspacing="4" border="0">
-              <thead>
-                  <tr>
-                      <td colspan="2">
-                          Products for sale
-                      </td>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>
-                          Kibblesnbits
-                      </td>
-                      <td>
-                          <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Kibblesnbits',4.88)"/>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>
-                          I'mas
-                      </td>
-                      <td>
-                          <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Iams',11.48)"/>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>
-                          Pedigree
-                      </td>
-                      <td>
-                          <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
-                      </td>
-                  </tr>
-              </tbody>
   
-          </table>
-      </td>
       <td valign="top">
           <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
               <thead>
