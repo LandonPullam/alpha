@@ -8,6 +8,8 @@
         <title>Dog Page</title>
         <script src="thing.js"></script>
         <link rel="stylesheet" href="dark-mode.css">
+        <script src="formcalculator.js"></script>
+
 
     </head>
 <body>
@@ -62,6 +64,8 @@
         </div>
       </div>
     </div>
+     </div>
+       </div>
 
 
     <div class="jumbotron jumbotron-fluid">
@@ -242,9 +246,79 @@
 
 
 
+<table cellpadding="4" cellspacing="4" border="1">
+  <tr>
+      <td valign="top">
+          <table cellpadding="4" cellspacing="4" border="0">
+              <thead>
+                  <tr>
+                      <td colspan="2">
+                          Products for sale
+                      </td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          Kibblesnbits
+                      </td>
+                      <td>
+                          <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Kibblesnbits',4.88)"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          I'mas
+                      </td>
+                      <td>
+                          <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Iams',11.48)"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Pedigree
+                      </td>
+                      <td>
+                          <input type="button" value="Add to cart" onclick="AddtoCart('Dog food','Pedigree',13.98)"/>
+                      </td>
+                  </tr>
+              </tbody>
+  
+          </table>
+      </td>
+      <td valign="top">
+          <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+              <thead>
+                  <tr>
+                      <td>
+                          Name
+                      </td>
+                      <td>
+                          Description
+                      </td>
+                      <td>
+                          Price
+                      </td>
+                  </tr>
+              </thead>
+              <tbody id="orderedProductsTblBody">
+  
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td colspan="3" align="right" id="cart_total">
+  
+                      </td>
+                  </tr>
+              </tfoot>
+          </table>
+      </td>
+  </tr>
+  </table>
+  
 
 
-      
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
