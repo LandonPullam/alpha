@@ -71,3 +71,24 @@
   color: white;
   transform: rotateY(180deg);
 }
+
+
+.check_box {
+  display:none;
+}
+
+.check_box + label{
+  background:url("pictures/logo.png") no-repeat;
+  height: 16px;
+  width: 16px;
+  display:inline-block;
+  padding: 0 0 0 0px;
+}
+
+.check_box:checked + label{
+  background:url('pictures/logo.png') no-repeat;
+  height: 16px;
+  width: 16px;
+  display:inline-block;
+  padding: 0 0 0 0px;
+}
