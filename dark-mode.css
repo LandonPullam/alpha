@@ -24,3 +24,39 @@
 [data-theme="dark"] .bg-white {
   background-color: #000 !important;
 }
+
+[data-theme="dark"] nav{
+color:  white;
+}
+
+[data-theme="dark"] #nav{
+  color: #DEDEDE;
+}
+[data-theme="dark"] #navac{
+  color: #DEDEDE;
+  font-weight: bold;
+}
+
+[data-theme="dark"] #adiv{
+  background-image: url() !important;
+}
+
+[data-theme="dark"] #bdiv{
+  background-image: url() !important;
+}
+
+[data-theme="dark"] footer{
+  background-color: #63878a !important; color: #DEDEDE !important
+}
+
+[data-theme="dark"] #abus{
+  background-color: #63878a !important; color: #DEDEDE !important;
+}
+
+[data-theme="dark"] #cards{
+  background-color: rgba(255, 255, 255, .5) !important;
+  color: black !important;
+}
+[data-theme="dark"] #deck{
+  color: red !important;
+}
