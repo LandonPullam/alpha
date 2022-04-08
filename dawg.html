@@ -8,7 +8,7 @@
         <title>Dog Page</title>
         <script src="thing.js"></script>
         <link rel="stylesheet" href="dark-mode.css">
-        <script src="formcalculator.js"></script>
+
 
 
     </head>
@@ -26,13 +26,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a id="nav" class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="dawg.html">Dogs <span class="sr-only">(current)</span></a>
+                <a id="navac" class="nav-link" href="dawg.html">Dogs <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="kat.html">Cats</a>
+                  <a id="nav" class="nav-link" href="kat.html">Cats</a>
               </li>
             </ul>
 
@@ -64,9 +64,9 @@
         </div>
       </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="deck">
         <div class="card-deck">
-          <div class="card">
+          <div class="card" style="background-color: black;"">
             <div class="card" >
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Anya</h5>
@@ -124,7 +124,7 @@
           </div>
         </div>
 
-        <div class="card-deck">
+        <div class="card-deck text-center">
           <div class="card">
             <div class="card" >
               <div class="card-body">
@@ -183,7 +183,7 @@
           </div>
         </div>
 
-        <div class="card-deck">
+        <div class="card-deck text-center">
           <div class="card">
             <div class="card" >
               <div class="card-body">
@@ -421,7 +421,147 @@
 
 
 
+<script>
+  
+ /*
+ 
+ This example covers a wide range of JavaScript features. 
+ - JS and DOM
+ - Event Listeners 
+ - variables 
+ - functions 
+ - if else conditionals and logic
+ - Arrays 
+ - Objects
+ 
+ */
 
+
+ document.querySelector('body').onclick = (e) => {
+   console.log('---------------------------------')
+   console.log(e.target)
+ }
+
+ const addForm = document.getElementById('add-form')
+ const inputName = document.getElementById('name')
+ const inputPrice = document.getElementById('price')
+ const itemsList = document.getElementById('items')
+ const divTotal = document.getElementById('total')
+
+ const cart = []
+
+ addForm.onsubmit = function(e) {
+   e.preventDefault()
+   const name = inputName.value
+   const price = inputPrice.value
+   
+   addToCart(name, price)
+   showCart()
+ }
+
+ itemsList.onclick = function(e) {
+   console.log(e.target)
+   if (e.target && e.target.classList.contains('remove')) {
+     console.log(e.target.dataset.name)
+     removeFromCart(e.target.dataset.name)
+   } else if (e.target && e.target.classList.contains('add-one')) {
+     addToCart(e.target.dataset.name)
+   } else if (e.target && e.target.classList.contains('remove-one')) {
+     removeFromCart(e.target.dataset.name, 1)
+   }
+ }
+
+ itemsList.onchange = function(e) {
+   if (e.target && e.target.classList.contains('update')) {
+     const qty = parseInt(e.target.value)
+     const name = e.target.dataset.name
+     updateCart(name, qty)
+
+   }
+ }
+
+ function addToCart(name, price) {
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       cart[i].qty += 1
+       showCart()
+       return true
+     }
+   }
+   cart.push({ name, price, qty: 1})
+   showCart()
+ }
+
+ function removeFromCart(name, qty = 0) {
+   console.log(name, qty)
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       if (qty) {
+         let newQty = cart[i].qty - qty
+         if (newQty > 0) {
+           cart[i].qty = newQty
+         } else {
+           cart.splice(i, 1)
+         }
+       } else {
+         cart.splice(i, 1)
+       }
+     }
+   }
+
+   showCart()
+ }
+
+ function showCart() {
+   let str = ''
+   for (let i = 0; i < cart.length; i += 1) {
+     str += `
+       <span>
+         <button class="remove" data-name="${cart[i].name}">remove</button>
+         ${cart[i].name} ${cart[i].price} each 
+         x ${cart[i].qty} = ${(cart[i].qty * cart[i].price).toFixed(2)}
+       </span>
+       <span>
+
+         <button class="add-one" data-name="${cart[i].name}"> + </button>
+         <button class="remove-one" data-name="${cart[i].name}"> - </button>
+
+       </span>
+       <br>
+     `
+   }
+   itemsList.innerHTML = str
+   divTotal.innerHTML = getTotal()
+ }
+
+ function getTotal() {
+   let total = 0
+   for (let i = 0; i < cart.length; i += 1) {
+     total += cart[i].price * cart[i].qty
+   }
+   return total.toFixed(2)
+ }
+
+ function updateCart(name, qty) {
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       cart[i].qty = qty
+       showCart()
+       return true
+     }
+   }
+   return false
+ }
+
+ // addToCart('Apple', .99)
+ // addToCart('Apple', .99)
+ // addToCart('Orange', 1.29)
+ 
+ showCart()
+
+ getTotal()
+
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
