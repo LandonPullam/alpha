@@ -8,7 +8,7 @@
         <title>Dog Page</title>
         <script src="thing.js"></script>
         <link rel="stylesheet" href="dark-mode.css">
-        <script src="formcalculator.js"></script>
+
 
 
     </head>
@@ -26,13 +26,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a id="nav" class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="dawg.html">Dogs <span class="sr-only">(current)</span></a>
+                <a id="navac" class="nav-link" href="dawg.html">Dogs <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="kat.html">Cats</a>
+                  <a id="nav" class="nav-link" href="kat.html">Cats</a>
               </li>
             </ul>
 
@@ -67,9 +67,9 @@
         </div>
       </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="deck">
         <div class="card-deck">
-          <div class="card">
+          <div class="card" style="background-color: black;"">
             <div class="card" >
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Anya</h5>
@@ -127,14 +127,14 @@
           </div>
         </div>
 
-        <div class="card-deck">
+        <div class="card-deck text-center">
           <div class="card">
             <div class="card" >
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Kibbles'n Bits</h5>
                 <img src="pICTUREs/kibblesnbits.png" alt="FOOD" class="card-img" style="height: 180px;">
              <p class="card-text cardT text-center">Costs: $4.88</p>
-             <input type="button" value="Add to cart" onclick="AddtoCart('kibblesnbits','Dog Food',4.88)"/>
+             <input type="button" value="Add to cart" onclick="addToCart(`Kibbles'n Bits`,4.88)"/>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@
                 <h5 class="card-title cardT text-center">I'mas</h5>
                 <img src="pICTUREs/iams.png" alt="FOOD" class="card-img" style="height: 180px;">
                 <p class="card-text cardT text-center">Costs: $11.48</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Imas','Dog Food',11.48)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Imas',11.48)"/>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@
                 <h5 class="card-title cardT text-center">Pedigree</h5>
                 <img src="pICTUREs/pedigree.png" alt="FOOD" class="card-img" style="height: 180px;">
                 <p class="card-text cardT text-center">Costs: $13.98</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Pedigree','Dog Food',13.98)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Pedigree',13.98)"/>
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@
                 <h5 class="card-title cardT text-center">Purina One Smart Blend</h5>
                 <img src="pICTUREs/purinaonesmartblend.png" alt="FOOD" class="card-img" style="height: 180px;">
                 <p class="card-text cardT text-center">Costs: $13.98</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Purina One Smart Blend','Dog Food',13.98)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Purina One Smart Blend',13.98)"/>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@
                 <h5 class="card-title cardT text-center">Blue Buffalo</h5>
                 <img src="pICTUREs/blue-buffalo.png" alt="FOOD" class="card-img" style="height: 180px;">
                 <p class="card-text cardT text-center">Costs: $15.98</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Blue Buffalo','Dog Food',15.98)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Blue Buffalo',15.98)"/>
               </div>
             </div>
           </div>
@@ -186,7 +186,7 @@
           </div>
         </div>
 
-        <div class="card-deck">
+        <div class="card-deck text-center">
           <div class="card">
             <div class="card" >
               <div class="card-body">
@@ -194,7 +194,7 @@
                 <img src="pICTUREs/nerf dog tennis ball launcherjpg.png" alt="TOYS" class="card-img"  style="height: 150; ">
                 <p class="card-text cardT text-center">Costs: $22.47</p>
                   <td>
-                          <input type="button" value="Add to cart" onclick="AddtoCart('Tennis Ball Lanucher','Dog Toy',22.47)"/>
+                          <input type="button" value="Add to cart" onclick="addToCart('Tennis Ball Launcher',22.47)"/>
                       </td>
               </div>
             </div>
@@ -206,7 +206,7 @@
                 <img src="pICTUREs/forest friend.png" alt="TOYS" class="card-img" style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $2.97</p>               
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Forest Friend','Dog Toy',2.97)"/>
+                  <input type="button" value="Add to cart" onclick="addToCart('Forest Friend',2.97)"/>
               </td>
               </div>
             </div>
@@ -218,7 +218,7 @@
                 <img src="pICTUREs/duck toy.png" alt="TOYS" class="card-img" style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $2.94</p>
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Duck Toy','Dog Toy',2.94)"/>
+                  <input type="button" value="Add to cart" onclick="addToCart('Duck Toy',2.94)"/>
               </td>
               </div>
             </div>
@@ -230,7 +230,7 @@
                 <img src="pICTUREs/hedgehog.png" alt="TOYS" class="card-img" style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $8.89</p>
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Hedgehog','Dog Toy',8.89)"/>
+                  <input type="button" value="Add to cart" onclick="addToCart('Hedgehog',8.89)"/>
               </td>
               </div>
             </div>
@@ -252,39 +252,319 @@
         </div>
 
 
-<table cellpadding="4" cellspacing="4" border="1">
-  
-      <td valign="top">
-          <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
-              <thead>
-                  <tr>
-                      <td>
-                          Name
-                      </td>
-                      <td>
-                          Description
-                      </td>
-                      <td>
-                          Price
-                      </td>
-                  </tr>
-              </thead>
-              <tbody id="orderedProductsTblBody">
-  
-              </tbody>
-              <tfoot>
-                  <tr>
-                      <td colspan="3" align="right" id="cart_total">
-  
-                      </td>
-                  </tr>
-              </tfoot>
-          </table>
-      </td>
-  </tr>
-  </table>
-  
 
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="pICTUREs/cart.png" alt="" width="72" height="72">
+      <h2>Checkout </h2>
+   </div>
+
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill" id="num"></span>
+        </h4>
+        <ul class="list-group mb-3" style="min-width: 500px;">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <p id="items" min->
+                <!-- Items here -->
+              </p>
+          </li>
+
+
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong id="total"></strong>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation was-validated" novalidate="">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+        
+
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="paypal">Paypal</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+
+ 
+
+
+
+<script>
+  
+ /*
+ 
+ This example covers a wide range of JavaScript features. 
+ - JS and DOM
+ - Event Listeners 
+ - variables 
+ - functions 
+ - if else conditionals and logic
+ - Arrays 
+ - Objects
+ 
+ */
+
+
+ document.querySelector('body').onclick = (e) => {
+   console.log('---------------------------------')
+   console.log(e.target)
+ }
+
+ const addForm = document.getElementById('add-form')
+ const inputName = document.getElementById('name')
+ const inputPrice = document.getElementById('price')
+ const itemsList = document.getElementById('items')
+ const divTotal = document.getElementById('total')
+
+ const cart = []
+
+ addForm.onsubmit = function(e) {
+   e.preventDefault()
+   const name = inputName.value
+   const price = inputPrice.value
+   
+   addToCart(name, price)
+   showCart()
+ }
+
+ itemsList.onclick = function(e) {
+   console.log(e.target)
+   if (e.target && e.target.classList.contains('remove')) {
+     console.log(e.target.dataset.name)
+     removeFromCart(e.target.dataset.name)
+   } else if (e.target && e.target.classList.contains('add-one')) {
+     addToCart(e.target.dataset.name)
+   } else if (e.target && e.target.classList.contains('remove-one')) {
+     removeFromCart(e.target.dataset.name, 1)
+   }
+ }
+
+ itemsList.onchange = function(e) {
+   if (e.target && e.target.classList.contains('update')) {
+     const qty = parseInt(e.target.value)
+     const name = e.target.dataset.name
+     updateCart(name, qty)
+
+   }
+ }
+
+ function addToCart(name, price) {
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       cart[i].qty += 1
+       showCart()
+       return true
+     }
+   }
+   cart.push({ name, price, qty: 1})
+   showCart()
+ }
+
+ function removeFromCart(name, qty = 0) {
+   console.log(name, qty)
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       if (qty) {
+         let newQty = cart[i].qty - qty
+         if (newQty > 0) {
+           cart[i].qty = newQty
+         } else {
+           cart.splice(i, 1)
+         }
+       } else {
+         cart.splice(i, 1)
+       }
+     }
+   }
+
+   showCart()
+ }
+
+ function showCart() {
+   let str = ''
+   for (let i = 0; i < cart.length; i += 1) {
+     str += `
+       <span>
+         <button class="remove" data-name="${cart[i].name}">remove</button>
+         ${cart[i].name} ${cart[i].price} each 
+         x ${cart[i].qty} = ${(cart[i].qty * cart[i].price).toFixed(2)}
+       </span>
+       <span>
+
+         <button class="add-one" data-name="${cart[i].name}"> + </button>
+         <button class="remove-one" data-name="${cart[i].name}"> - </button>
+
+       </span>
+       <br>
+     `
+   }
+   itemsList.innerHTML = str
+   divTotal.innerHTML = getTotal()
+ }
+
+ function getTotal() {
+   let total = 0
+   for (let i = 0; i < cart.length; i += 1) {
+     total += cart[i].price * cart[i].qty
+   }
+   return total.toFixed(2)
+ }
+
+ function updateCart(name, qty) {
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       cart[i].qty = qty
+       showCart()
+       return true
+     }
+   }
+   return false
+ }
+
+ // addToCart('Apple', .99)
+ // addToCart('Apple', .99)
+ // addToCart('Orange', 1.29)
+ 
+ showCart()
+
+ getTotal()
+
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
