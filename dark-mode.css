@@ -38,11 +38,11 @@ color:  white;
 }
 
 [data-theme="dark"] #adiv{
-  background-image: url() !important;
+filter: invert(1) !important;
 }
 
 [data-theme="dark"] #bdiv{
-  background-image: url() !important;
+filter: invert(1) !important;
 }
 
 [data-theme="dark"] footer{
@@ -57,6 +57,27 @@ color:  white;
   background-color: rgba(255, 255, 255, .5) !important;
   color: black !important;
 }
-[data-theme="dark"] #deck{
-  color: red !important;
+
+[data-theme="dark"] #invert{
+  filter: invert(1) !important;
+  }
+[data-theme="dark"] #bginv{
+  background-color: rgba(255,255,255,.1) !important
+}
+
+[data-theme="dark"] #imginv{
+  background-image: url(pictures/divider.jpg); filter: invert(1);
+}
+[data-theme="dark"] #noinv{
+  filter: invert(1);
+}
+
+#block{
+  background-color: rgba(255,255,255,.8) !important;
+  text-align: center;
+}
+
+
+#cards{
+background-color: rgba(255,255,255,.5);
 }

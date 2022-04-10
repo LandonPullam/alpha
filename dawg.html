@@ -1,302 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Dog Page</title>
-      <script src="thing.js"></script>
-      <link rel="stylesheet" href="dark-mode.css">
-      <script src="formcalculator.js"></script>
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-        <a class="navbar-brand" href="#" style="padding-right: 50px">
-          <img src="pICTUREs/dog photo 2.png" width="50" height="50" alt="" style=" -webkit-transform: scaleX(-1); transform: scaleX(-1);">
-        </a>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dog Page</title>
+        <script src="thing.js"></script>
+        <link rel="stylesheet" href="dark-mode.css">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
+
+    </head>
+<body style="text-align: center;">
+  
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+          <a class="navbar-brand" href="#" style="padding-right: 50px">
+              <img src="pICTUREs/dog photo 2.png" width="50" height="50" alt="" style=" -webkit-transform: scaleX(-1);
+              transform: scaleX(-1);">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="dawg.html">Dogs <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kat.html">Cats</a>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="form-check form-switch">
-          <input type="checkbox" class="form-check-input" id="darkSwitch" style="display: none">
-          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-        </div>
-        
-        <script src="dark-mode-switch.min.js"></script>
-        
-        <a class="navbar-brand" href="#" style="padding-left: 50px;">
-          <img src="pICTUREs/dog1.png" width="50" height="50" alt="" >
+
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a id="nav" class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a id="navac" class="nav-link" href="dawg.html">Dogs <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a id="nav" class="nav-link" href="kat.html">Cats</a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch" style="display: none">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="dark-mode-switch.min.js"></script>
+          
+          <a class="navbar-brand" href="#" style="padding-left: 50px;">
+            <img src="pICTUREs/dog1.png" width="50" height="50" alt="" >
         </a>
       </nav>
-    
-      <div class="container-fluid">
-        <div class="jumbotron jumbotron-fluid" style="background-image: url(pICTUREs/dawg.jpg); background-repeat: no-repeat; background-position: center;">
-          <div class="container" style="height: 500px">
-          </div>
-        </div>
-      </div>
 
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4"style="text-align:center;">Adopt a Dog Today!</h1>
+
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid" style="background-image: url(pICTUREs/dawg.jpg); background-repeat: no-repeat; background-position: center;">
+        <div class="container" style="height: 500px">
+          <div class="col-6 text-center" id="header" style="background-color: rgba(99,135,138,.6); color: #DEDEDE; -webkit-text-stroke: 1px black">
+          <h1 class="display-4">Adopt a Dog!</h1>
           <p class="lead">There are not enough homes for all the animals that are born every year. 
             Adopting from a shelter helps weaken the pet overpopulation cycle. Each year 8 to 12 million dogs,
              cats, puppies and kittens are euthanized because there are simply not enough homes for them. By adopting today you could save the life of a deserving pet.</p>
-        </div>
+    </div>
+                </div>
       </div>
+    </div>
 
-      <div class="container-fluid">
-        <div class="card-deck">
-          <div class="card">
-            <div class="card" >
+
+<div class="container-fluid" id="deck">
+        <div class="card-deck" id="imginv" style="background-image: url(pictures/divider.png); background-size: 100px; background-repeat:space;"> 
+
+            <div class="card" id="cards">
               <div class="card-body">
-                <h5 class="card-title cardT text-center">Anya</h5>
-                <div class="bg-image hover-overlay">
-                  <img src="pICTUREs/anya.png" alt="DOGS" class="card-img" >
-                  <div class="mask" style="rgba(251, 251, 251, 0.35);"></div>
+                <div id="block">
+                  <h5 class="card-title cardT text-center">Anya</h5>
+                <img  id="noinv" src="pICTUREs/anya.png" alt="DOGS" class="card-img" >
+                <p class="card-text">Anya is a high energy, loving, and friendly dog. She would be great as a family pet for you
+                  and your kids. </p>
                 </div>
-                <p class="card-text">Anya is a high energy, loving, and friendly dog. She would be great as a family pet for you and your kids. </p>
-              </div>
             </div>
           </div>
-          
-          <div class="card">
-            <div class="card" >
+          <div class="card" id="cards">
+
               <div class="card-body" >
+                <div id="block">
                 <h5 class="card-title cardT text-center">Bungee </h5>
-                <div class="bg-image hover-overlay">
-                  <img src="pICTUREs/bungee.png" alt="DOGS" class="card-img" >
-                  <div class="mask" style="rgba(251, 251, 251, 0.35);"></div>
-                </div>
-                <p class="card-text"> Bungee is a loving dog. He is really relaxed and love to cuddle! He's great around other animals and even cats! Bungee is very low maintenance as he is a older dog.</p>
+                <img src="pICTUREs/bungee.png" alt="DOGS" class="card-img" id="noinv">
+                <p class="card-text"> Bungee is a loving dog. He is really relaxed and love to cuddle! He's great around other animals
+                  and even cats! Bungee is very low maintenance as he is a older dog.</p>
               </div>
-            </div>
+</div>
           </div>
+          <div class="card" id="cards">
 
-          <div class="card">
-            <div class="card" >
               <div class="card-body" >
+                <div id="block">
                 <h5 class="card-title cardT text-center">Donnie</h5>
-                <div class="bg-image hover-overlay">
-                  <img src="pICTUREs/donnie.png" alt="DOGS" class="card-img" >
-                  <div class="mask" style="rgba(251, 251, 251, 0.35);"></div>
-                </div>
-                <p class="card-text">Donnie is a 1 year old dog. He does do well with certain types of cats and dogs bite most of the time is too hyper to get along with them.</p>
+                <img src="pICTUREs/donnie.png" alt="DOGS" class="card-img" id="noinv">
+                <p class="card-text">Donnie is a 1 year old dog. He does do well with certain types of cats and dogs bite most of the time
+                  is too hyper to get along with them.</p>
               </div>
             </div>
           </div>
+          <div class="card" id="cards">
 
-          <div class="card">
-            <div class="card" >
               <div class="card-body">
+                <div id="block">
                 <h5 class="card-title cardT text-center">Nitro</h5>
-                <div class="bg-image hover-overlay">
-                  <img src="pICTUREs/nitro.png" alt="DOGS" class="card-img" >
-                  <div class="mask" style="rgba(251, 251, 251, 0.35);"></div>
-                </div>
-                <p class="card-text">Nitro is a very friendly but scared dog. He was trained by his last owner Shaggy with tons of scooby snacks. He is looking for a new owner preferably a group of 4 teenagers looking to solve mystery's. Ruh Roh</p>
+                <img src="pICTUREs/nitro.png" alt="DOGS" class="card-img" id="noinv">
+                <p class="card-text">Nitro is a very friendly but scared dog. He was trained by his last owner Shaggy with tons of scooby snacks. He is looking
+                  for a new owner preferably a group of 4 teenagers looking to solve mystery's. Ruh Roh</p>
               </div>
             </div>
           </div>
+          <div class="card" id="cards">
 
-          <div class="card">
-            <div class="card cardT">
               <div class="card-body">
+                <div id="block">
                 <h5 class="card-title cardT text-center">Rascal </h5>
-                <div class="bg-image hover-overlay">
-                  <img src="pICTUREs/rascal.png" alt="DOGS" class="card-img" >
-                  <div class="mask" style="rgba(251, 251, 251, 0.35);"></div>
-                </div>
-                <p class="card-text">Rascal is such a playful pup. He loves other animals and enjoys going to the dog park. Rascal has so many new adventures ahead of him and deserves a loving family.</p>
+                <img src="pICTUREs/rascal.png" alt="DOGS" class="card-img" id="noinv"/>
+                <p class="card-text">Rascal is such a playful pup. He loves other animals and enjoys going to the dog park. Rascal has so many new adventures
+                  ahead of him and deserves a loving family.</p>
               </div>
-            </div>
+</div>
           </div>
         </div> 
-
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" id="invert" style="background-color: rgba(134, 134, 134, 0.2) !important; color: black">
           <div class="container">
-            <h1 class="display-4"style="text-align:center;">Dog Food</h1>
+            <h1 class="display-4">Dog Food</h1>
           </div>
         </div>
 
-        <div class="card-deck">
+        <div class="card-deck text-center" id="invert" style="color: black;">
           <div class="card">
-            <div class="card" >
+
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Kibbles'n Bits</h5>
-                <img src="pICTUREs/kibblesnbits.png" alt="FOOD" class="card-img" style="height: 180px;">
+                <img src="pICTUREs/kibblesnbits.png" alt="FOOD" class="card-img" id="noinv"  style="height: 250px;">
              <p class="card-text cardT text-center">Costs: $4.88</p>
              <input type="button" value="Add to cart" onclick="addToCart(`Kibbles'n Bits`,4.88)"/>
               </div>
-            </div>
-          </div>
 
+          </div>
           <div class="card">
-            <div class="card" >
+
               <div class="card-body" >
                 <h5 class="card-title cardT text-center">I'mas</h5>
-                <img src="pICTUREs/iams.png" alt="FOOD" class="card-img" style="height: 180px;">
+                <img src="pICTUREs/iams.png" alt="FOOD" class="card-img" id="noinv"   style="height: 250px;">
                 <p class="card-text cardT text-center">Costs: $11.48</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Imas','Dog Food',11.48)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Imas',11.48)"/>
               </div>
-            </div>
-          </div>
 
+          </div>
           <div class="card">
-            <div class="card" >
+
               <div class="card-body" >
                 <h5 class="card-title cardT text-center">Pedigree</h5>
-                <img src="pICTUREs/pedigree.png" alt="FOOD" class="card-img" style="height: 180px;">
+                <img src="pICTUREs/pedigree.png" alt="FOOD" class="card-img" id="noinv"  style="height: 250px;">
                 <p class="card-text cardT text-center">Costs: $13.98</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Pedigree','Dog Food',13.98)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Pedigree',13.98)"/>
               </div>
-            </div>
-          </div>
 
+          </div>
           <div class="card">
-            <div class="card" >
+
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Purina One Smart Blend</h5>
-                <img src="pICTUREs/purinaonesmartblend.png" alt="FOOD" class="card-img" style="height: 180px;">
+                <img src="pICTUREs/purinaonesmartblend.png" alt="FOOD" class="card-img" id="noinv"   style="height: 250px;">
                 <p class="card-text cardT text-center">Costs: $13.98</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Purina One Smart Blend','Dog Food',13.98)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Purina One Smart Blend',13.98)"/>
               </div>
-            </div>
-          </div>
 
+          </div>
           <div class="card">
-            <div class="card cardT">
+
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Blue Buffalo</h5>
-                <img src="pICTUREs/blue-buffalo.png" alt="FOOD" class="card-img" style="height: 180px;">
+                <img src="pICTUREs/blue-buffalo.png" alt="FOOD" class="card-img" id="noinv"   style="height: 250px;">
                 <p class="card-text cardT text-center">Costs: $15.98</p>
-                <input type="button" value="Add to cart" onclick="AddtoCart('Blue Buffalo','Dog Food',15.98)"/>
+                <input type="button" value="Add to cart" onclick="addToCart('Blue Buffalo',15.98)"/>
               </div>
-            </div>
+
           </div>
         </div> 
-
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" id="invert" style="background-color: rgba(134, 134, 134, 0.2) !important; color: black">
           <div class="container">
-            <h1 class="display-4"style="text-align:center;">Dog toys</h1>
+            <h1 class="display-4">Dog toys</h1>
           </div>
         </div>
 
-        <div class="card-deck">
+        <div class="card-deck text-center" id="invert" style="color: black;">
           <div class="card">
-            <div class="card" >
               <div class="card-body">
-                <h5 class="card-title cardT text-center">Tennis Ball Lanucher</h5>
-                <img src="pICTUREs/nerf dog tennis ball launcherjpg.png" alt="TOYS" class="card-img"  style="height: 150; ">
+                <h5 class="card-title cardT text-center">Tennis Ball Launcher</h5>
+                <img src="pICTUREs/nerf dog tennis ball launcherjpg.png" alt="TOYS" class="card-img" id="noinv"    style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $22.47</p>
-                <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Tennis Ball Lanucher','Dog Toy',22.47)"/>
-                </td>
+                  <td>
+                          <input type="button" value="Add to cart" onclick="addToCart('Tennis Ball Launcher',22.47)"/>
+                      </td>
               </div>
-            </div>
           </div>
           <div class="card">
-            <div class="card" >
               <div class="card-body" >
                 <h5 class="card-title cardT text-center">Forest Friend</h5>
-                <img src="pICTUREs/forest friend.png" alt="TOYS" class="card-img" style="height: 150px;">
+                <img src="pICTUREs/forest friend.png" alt="TOYS" class="card-img" id="noinv"   style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $2.97</p>               
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Forest Friend','Dog Toy',2.97)"/>
-                </td>
+                  <input type="button" value="Add to cart" onclick="addToCart('Forest Friend',2.97)"/>
+              </td>
               </div>
-            </div>
           </div>
           <div class="card">
-            <div class="card" >
               <div class="card-body" >
                 <h5 class="card-title cardT text-center">Duck Toy</h5>
-                <img src="pICTUREs/duck toy.png" alt="TOYS" class="card-img" style="height: 150px;">
+                <img src="pICTUREs/duck toy.png" alt="TOYS" class="card-img" id="noinv"   style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $2.94</p>
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Duck Toy','Dog Toy',2.94)"/>
-                </td>
+                  <input type="button" value="Add to cart" onclick="addToCart('Duck Toy',2.94)"/>
+              </td>
               </div>
-            </div>
           </div>
           <div class="card">
-            <div class="card" >
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Hedgehog</h5>
-                <img src="pICTUREs/hedgehog.png" alt="TOYS" class="card-img" style="height: 150px;">
+                <img src="pICTUREs/hedgehog.png" alt="TOYS" class="card-img" id="noinv"   style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $8.89</p>
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Hedgehog','Dog Toy',8.89)"/>
-                </td>
+                  <input type="button" value="Add to cart" onclick="addToCart('Hedgehog',8.89)"/>
+              </td>
               </div>
-            </div>
           </div>
           <div class="card">
-            <div class="card cardT">
               <div class="card-body">
                 <h5 class="card-title cardT text-center">Frisbee</h5>
-                <img src="pICTUREs/frisbee.png" alt="TOYS" class="card-img" style="height: 150px;">
+                <img src="pICTUREs/frisbee.png" alt="TOYS" class="card-img"  id="noinv"  style="height: 150px;">
                 <p class="card-text cardT text-center">Costs: $1.00</p>
                 <td>
-                  <input type="button" value="Add to cart" onclick="AddtoCart('Frisbee','Dog Toy',1.00)"/>
-                </td>
-              </div>
+                  <input type="button" value="Add to cart" onclick="addToCart('Frisbee',1.00)"/>
+              </td>
             </div>
           </div>
         </div> 
        
-      </div>
-      
-      <table cellpadding="4" cellspacing="4" border="1">
-        <td valign="top">
-          <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
-            <thead>
-              <tr>
-                <td>
-                  Name
-                </td>
-                <td>
-                  Description
-                </td>
-                <td>
-                  Price
-                </td>
-              </tr>
-            </thead>
-            <tbody id="orderedProductsTblBody">
-              
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="3" align="right" id="cart_total">
-  
-                </td>
-              </tr>
-            </tfoot>
-          </table>
-        </td>
-      </tr>
-    </table>
+        </div>
+  <div class="container">
+    <div class="py-5 text-center" id="invert" >
+      <img class="d-block mx-auto mb-4" src="pICTUREs/cart.png" alt="" width="72" height="72">
+      <h2 style="color: black">Checkout</h2>
+   </div>
+    <div class="row" id="bginv" style="background-color: rgba(0,0,0,.1)">
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill" id="num"></span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <p id="items" min->
+                <!-- Items here -->
+              </p>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span id="invert">Total (USD)</span>
+            <strong id="total" class="text-dark">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+            </strong>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation was-validated" novalidate="">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+          <h4 class="mb-3">Payment</h4>
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="paypal">Paypal</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+ 
+
+
+
+<script>
+
+ /*
+ 
+ This example covers a wide range of JavaScript features. 
+ - JS and DOM
+ - Event Listeners 
+ - variables 
+ - functions 
+ - if else conditionals and logic
+ - Arrays 
+ - Objects
+ 
+ */
+
+
+ document.querySelector('body').onclick = (e) => {
+   console.log('---------------------------------')
+   console.log(e.target)
+ }
+
+ const addForm = document.getElementById('add-form')
+ const inputName = document.getElementById('name')
+ const inputPrice = document.getElementById('price')
+ const itemsList = document.getElementById('items')
+ const divTotal = document.getElementById('total')
+
+ const cart = []
+
+ addForm.onsubmit = function(e) {
+   e.preventDefault()
+   const name = inputName.value
+   const price = inputPrice.value
+
+   addToCart(name, price)
+   showCart()
+ }
+
+ itemsList.onclick = function(e) {
+   console.log(e.target)
+   if (e.target && e.target.classList.contains('remove')) {
+     console.log(e.target.dataset.name)
+     removeFromCart(e.target.dataset.name)
+   } else if (e.target && e.target.classList.contains('add-one')) {
+     addToCart(e.target.dataset.name)
+   } else if (e.target && e.target.classList.contains('remove-one')) {
+     removeFromCart(e.target.dataset.name, 1)
+   }
+ }
+
+ itemsList.onchange = function(e) {
+   if (e.target && e.target.classList.contains('update')) {
+     const qty = parseInt(e.target.value)
+     const name = e.target.dataset.name
+     updateCart(name, qty)
+
+   }
+ }
+
+ function addToCart(name, price) {
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       cart[i].qty += 1
+       showCart()
+       return true
+     }
+   }
+   cart.push({ name, price, qty: 1})
+   showCart()
+ }
+
+ function removeFromCart(name, qty = 0) {
+   console.log(name, qty)
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       if (qty) {
+         let newQty = cart[i].qty - qty
+         if (newQty > 0) {
+           cart[i].qty = newQty
+         } else {
+           cart.splice(i, 1)
+         }
+       } else {
+         cart.splice(i, 1)
+       }
+     }
+   }
+
+   showCart()
+ }
+
+ function showCart() {
+   let str = ''
+   for (let i = 0; i < cart.length; i += 1) {
+     str += `
+       <span id="invert">
+         <button class="remove" style="background-color: rgba(222,222,222,0.8);" data-name="${cart[i].name}">remove</button>
+         ${cart[i].name} ${cart[i].price} each 
+         x ${cart[i].qty} = ${(cart[i].qty * cart[i].price).toFixed(2)}
+       </span>
+       <span id="invert">
+         <button class="add-one" style="background-color: rgba(222,222,222,0.8); data-name="${cart[i].name}"> + </button>
+         <button class="remove-one" style="background-color: rgba(222,222,222,0.8); data-name="${cart[i].name}"> - </button>
+       </span>
+       <br>
+     `
+   }
+   itemsList.innerHTML = str
+   divTotal.innerHTML = getTotal()
+ }
+
+ function getTotal() {
+   let total = 0
+   for (let i = 0; i < cart.length; i += 1) {
+     total += cart[i].price * cart[i].qty
+   }
+   return total.toFixed(2)
+ }
+
+ function updateCart(name, qty) {
+   for (let i = 0; i < cart.length; i += 1) {
+     if (cart[i].name === name) {
+       cart[i].qty = qty
+       showCart()
+       return true
+     }
+   }
+   return false
+ }
+
+ // addToCart('Apple', .99)
+ // addToCart('Apple', .99)
+ // addToCart('Orange', 1.29)
+
+ showCart()
+
+ getTotal()
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
